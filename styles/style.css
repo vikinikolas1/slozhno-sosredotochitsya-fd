@@ -132,3 +132,87 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+@media (width >= 768px) {
+    .header {
+        margin-bottom: 60px;
+    }
+
+    .header__theme-menu {
+        top: 182px;
+    }
+
+    .title {
+        font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    }
+
+    .header__title {
+        margin-top: 453px;
+        justify-self: start;
+    }
+
+    .header__intro {
+        width: 364px;
+        justify-self: end;
+    }
+
+    .how,
+    .what,
+    .why {
+        margin-bottom: 80px;
+    }
+
+    .why,
+    .how {
+        display: flex;
+        gap: 20px;
+    }
+
+    .why .content {
+        width: 472px;
+    }
+
+    .how .title__h2 {
+        width: 236px;
+    }
+
+    .how .content {
+        width: 472px;
+    }
+
+    .what .title__h2 {
+        width: 236px;
+    }
+
+    .pictures {
+        margin-bottom: 60px;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .images img:nth-child(1) {
+        grid-column: span 2;
+    }
+
+    .images img:nth-child(2) {
+        grid-row: span 2;
+    }
+
+    .images img:nth-child(3) {
+        grid-row: span 2;
+    }
+
+    .images img:nth-child(5) {
+        grid-column: span 2;
+    }
+}
