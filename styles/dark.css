@@ -6,92 +6,20 @@
 
 :root.theme-dark {
     /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-    --accent-color: #ff0070;
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
     --bg-color: #000028;
-    --p-color: #f1b2ce;
-}
+    --cover-image: url("../images/cover-image-dark.png");
+    --text-color: #f1b2ce;
+    --heading-color: #ff0070;
+    --accent-color: #ff0070;
+    --marker-text-color: #000028;
+    --display-color: #db00ff;
+    --control-color: #ff0070;
+    --control-hover-color: rgb(255 0 112 / 40%);
+    --decor-color: #ff0070;
+    --rec-display: flex;
 
-.rec {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: var(--accent-color);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.rec::after {
-    content: "";
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    margin-left: 9px;
-    margin-right: 9px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    box-shadow: 0 0 6px 1px #ff0070, 0 0 8px 2px rgb(255 0 112 / 70%),
-        0 0 10px 4px rgb(255 0 112 / 35%);
-    vertical-align: middle;
-}
-
-.decorated-zone {
-    position: relative;
-}
-
-.decorated-zone::before,
-.decorated-zone::after {
-    content: "";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    pointer-events: none;
-}
-
-/* Правый верхний угол */
-.decorated-zone::before {
-    top: 0;
-    right: 0;
-    border-top: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-}
-
-/* Левый нижний угол */
-.decorated-zone::after {
-    bottom: 0;
-    left: 0;
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
-}
-
-.header__theme-menu-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.header__theme-menu-button {
-    color: var(--accent-color);
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 400;
-    background-color: transparent;
-    border: none;
-    padding: 1.5px 13px;
-}
-
-.header__theme-menu-button:hover {
-    border: 1px solid var(--accent-color);
-}
-
-.header__theme-menu-button:focus {
-    outline: none;
-    border-bottom: 1px solid var(--accent-color);
-}
-
-.title {
-    color: #db00ff;
+    color-scheme: dark;
 }

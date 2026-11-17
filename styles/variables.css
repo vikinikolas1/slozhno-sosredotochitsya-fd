@@ -4,5 +4,43 @@
 */
 
 :root {
-    --bg-image: url("../images/cover-image-dark.png");
+    /* размеры */
+    --page-padding: 10px;
+    --display-font-size: clamp(116px, 112.18px + 1.0178vw, 120px);
+
+    /* тёмная тема «неон» — тема по умолчанию */
+    --bg-color: #000028;
+    --cover-image: url("../images/cover-image-dark.png");
+    --text-color: #f1b2ce;
+    --heading-color: #ff0070;
+    --accent-color: #ff0070;
+    --marker-text-color: #000028;
+    --display-color: #db00ff;
+    --control-color: #ff0070;
+    --control-hover-color: rgb(255 0 112 / 40%);
+    --decor-color: #ff0070;
+    --rec-display: flex;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #fff1f7;
+        --cover-image: url("../images/cover-image-light.png");
+        --text-color: #353430;
+        --heading-color: #353430;
+        --accent-color: #ff8dcb;
+        --marker-text-color: #353430;
+        --display-color: #ffc2e6;
+        --control-color: #353430;
+        --control-hover-color: rgb(53 52 48 / 40%);
+        --decor-color: #353430;
+        --rec-display: none;
+    }
+}
+
+@media (width >= 768px) {
+    :root {
+        --page-padding: 20px;
+        --display-font-size: clamp(120px, 9px + 14.4531vw, 157px);
+    }
 }
