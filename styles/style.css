@@ -7,8 +7,8 @@
     line-height: 1.3;
     color: var(--text-color);
     background-color: var(--bg-color);
-    background-attachment: fixed;
     background: var(--bg-color) var(--cover-image) center / cover no-repeat;
+    background-attachment: fixed;
 }
 
 /* Уголки-рамки у шапки и подвала */
