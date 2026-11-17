@@ -8,6 +8,7 @@
     color: var(--text-color);
     background-color: var(--bg-color);
     background-attachment: fixed;
+    background: var(--bg-color) var(--cover-image) center / cover no-repeat;
 }
 
 /* Уголки-рамки у шапки и подвала */
@@ -60,9 +61,9 @@
 .header {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 668px;
     padding: var(--page-padding);
-    background: var(--bg-color) var(--cover-image) center / cover no-repeat;
 }
 
 .header__rec {
@@ -88,7 +89,6 @@
 }
 
 .header__theme-menu {
-    position: absolute;
     top: 75px;
     right: var(--page-padding);
     z-index: 1;
@@ -269,7 +269,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 668px;
     padding: var(--page-padding);
 }
 
@@ -285,7 +286,7 @@
 
     .header__intro {
         align-self: flex-end;
-        width: 364px;
+        max-width: 364px;
         margin-top: 162px;
     }
 
@@ -371,7 +372,7 @@
     }
 
     .header__intro {
-        width: 491px;
+        max-width: 491px;
         margin-top: 114px;
     }
 
